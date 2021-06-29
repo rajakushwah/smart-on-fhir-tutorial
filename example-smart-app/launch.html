@@ -1,5 +1,5 @@
 <html lang="en">
-{% load static %}
+
 <head>
     <link rel="shortcut icon" type="image/png" href="{% static 'app/favicon.ico' %}"/>
     <title>Smart FHIR App</title>
@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row" style="margin-top:30px;">
         <div class="col-xs-4">
-            <form action="/" method="POST" class="form-inline">{% csrf_token %}
+            <form action="/" method="POST" class="form-inline">
                 <div class="form-group">
                     <label style="font-size: 15px;">Enter Patient ID</label>
                     <input type="text" class="form-control" placeholder="Search by id..." name="ID"
